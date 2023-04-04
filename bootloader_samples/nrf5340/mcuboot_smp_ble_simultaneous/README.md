@@ -36,3 +36,11 @@ Lastly, reset the Developement Kit. Both cores will now be updated.
 ```
 nrfjprog --reset
 ```
+west build \
+--build-dir /Users/asc/duravit/samples_for_nrf_connect_sdk/bootloader_samples/nrf5340/mcuboot_smp_ble_simultaneous/build /Users/asc/duravit/samples_for_nrf_connect_sdk/bootloader_samples/nrf5340/mcuboot_smp_ble_simultaneous \
+--pristine \
+--board nrf5340dk_nrf5340_cpuapp \
+-- \
+-DNCS_TOOLCHAIN_VERSION:STRING="NONE" \
+-DDTC_OVERLAY_FILE:STRING="/Users/asc/duravit/samples_for_nrf_connect_sdk/bootloader_samples/nrf5340/mcuboot_smp_ble_simultaneous/app.overlay" \
+-DCONF_FILE:STRING="/Users/asc/duravit/samples_for_nrf_connect_sdk/bootloader_samples/nrf5340/mcuboot_smp_ble_simultaneous/prj.conf"
