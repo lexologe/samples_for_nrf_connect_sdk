@@ -12,5 +12,5 @@ void main(void)
 {
     img_mgmt_register_group();
     start_smp_bluetooth();
-	printk("AAA this to see it change.\n");
+	  printk(__DATE__ " " __TIME__ " this to see it CHANGE.\n");
 }
